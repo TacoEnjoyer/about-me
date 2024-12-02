@@ -12,17 +12,24 @@ import 'primeicons/primeicons.css'
 		<style>
 			.typing-text {
 				overflow: hidden;
-				white-space: nowrap;
-				animation: typing 3s steps(40, end) forwards;
+				white-space: pre-wrap;
+				animation: typing 3s steps(30, end) forwards;
 				margin: 0;
 				display: block;
 				width: 0;
+				font-size: 1rem;
 			}
 
 			@keyframes typing {
-				from { width: 0 }
-				to { width: 100% }
-			}
+        from { 
+            width: 0;
+            border-right: 2px solid transparent;
+        }
+        to { 
+            width: 100%;
+            border-right: 2px solid transparent;
+        }
+    }
 
 			.social-button {
 				opacity: 0;
@@ -39,51 +46,64 @@ import 'primeicons/primeicons.css'
 					transform: translateY(0);
 				}
 			}
+
+			@media (max-width: 768px) {
+				.typing-text {
+					font-size: 0.75rem;
+				}
+				.container {
+					padding-left: 0.5rem !important;
+					padding-right: 0.5rem !important;
+					max-width: 100%;
+                    overflow-x: hidden;
+				}
+			}
 		</style>
 	</head>
 	<body class="bg-gray-950 text-white font-mono font-normal">
-		<div class="px-22 md:px-44 pt-24">
+		<div class="container px-20 md:px-44 pt-24">
 			<h1 class="typing-text" style="animation-delay: 0s">welcome to my personal website</h1>
-			<h1 class="typing-text" style="animation-delay: 1s">my name is vradient (formerly known as atstarcore)</h1>
-			<h1 class="typing-text" style="animation-delay: 3s">i love playing game and sometime i'll coding with html stuff</h1>
-			<h1 class="typing-text" style="animation-delay: 5s">member of ngua den group chat, also a member of ZSB clan on DemonListVN</h1>
-			<h1 class="typing-text" style="animation-delay: 8s">currently have no job but at least i have a project that still being developing</h1>
+			<h1 class="typing-text" style="animation-delay: 3s">my name is vradient (formerly known as atstarcore)</h1>
+			<h1 class="typing-text" style="animation-delay: 6s">i love playing game and sometime i'll coding with html stuff</h1>
+			<h1 class="typing-text" style="animation-delay: 9s">member of ngua den group chat, also a member of ZSB clan on DemonListVN</h1>
+			<h1 class="typing-text" style="animation-delay: 12s">currently have no job but at least i have a project that still being developing</h1>
 		</div>
-		<div class="px-22 md:px-44 pt-8">
-			<h1 class="typing-text" style="animation-delay: 11s">you can find me as @_vradient in this discord server (also project server)</h1>
+		<div class="container px-20 md:px-44 pt-8">
+			<h1 class="typing-text" style="animation-delay: 15s">you can find me as @_vradient in this discord server (also project server)</h1>
 		</div>
-		<div class="px-22 md:px-44 pt-8">
+		<div class="container px-20 md:px-44 pt-8">
 			<a href="https://discord.gg/UFVv6ZDH4P" class="cursor-pointer">
-				<div class="pi box-border h-19 w-19 p-4 border-2 border-indigo-700 rounded-2xl bg-indigo-800 flex items-center justify-center social-button" style="animation-delay: 12s">
+				<div class="pi box-border h-19 w-19 p-4 border-2 border-indigo-700 rounded-2xl bg-indigo-800 flex items-center justify-center social-button" style="animation-delay: 16s">
 					<i class="pi pi-discord text-5xl"></i>
 				</div>
-			</a></div>
-		<div class="font-mono font-normal px-22 md:px-44 pt-16">
-			<h1 class="typing-text" style="animation-delay: 13s">my social media</h1>
+			</a>
 		</div>
-		<div class="px-22 md:px-44 pt-8">
+		<div class="container font-mono font-normal px-20 md:px-44 pt-16">
+			<h1 class="typing-text" style="animation-delay: 18s">my social media</h1>
+		</div>
+		<div class="container px-20 md:px-44 pt-8 flex flex-wrap gap-4">
 			<a href="https://www.facebook.com/owhdoheidbekshkwhskbdksbdodboe" class="cursor-pointer">
-				<div class="pi box-border h-19 w-19 p-4 border-2 border-blue-500 rounded-2xl bg-blue-600 flex items-center justify-center social-button" style="animation-delay: 14s">
+				<div class="pi box-border h-19 w-19 p-4 border-2 border-blue-500 rounded-2xl bg-blue-600 flex items-center justify-center social-button" style="animation-delay: 19s">
 					<i class="pi pi-facebook text-5xl"></i>
 				</div>
 			</a>
 			<a href="https://youtube.com/@vradient-yes?si=8ktKXASldAjdKT7x" class="cursor-pointer">
-				<div class="pi box-border h-19 w-19 p-4 border-2 border-red-500 rounded-2xl bg-red-600 flex items-center justify-center social-button" style="animation-delay: 14.5s">
+				<div class="pi box-border h-19 w-19 p-4 border-2 border-red-500 rounded-2xl bg-red-600 flex items-center justify-center social-button" style="animation-delay: 19.5s">
 					<i class="pi pi-youtube text-5xl"></i>
 				</div>
 			</a>
 			<a href="https://x.com/IbuyCocacola" class="cursor-pointer">
-				<div class="pi box-border h-19 w-19 p-4 border-2 border-gray-900 rounded-2xl bg-black flex items-center justify-center social-button" style="animation-delay: 15s">
+				<div class="pi box-border h-19 w-19 p-4 border-2 border-gray-900 rounded-2xl bg-black flex items-center justify-center social-button" style="animation-delay: 20s">
 					<i class="pi pi-twitter text-5xl"></i>
 				</div>
 			</a>
 			<a href="https://www.tiktok.com/@vradient?is_from_webapp=1&sender_device=pc" class="cursor-pointer">
-				<div class="pi box-border h-19 w-19 p-4 border-2 border-gray-900 rounded-2xl bg-black flex items-center justify-center social-button" style="animation-delay: 15.5s">
+				<div class="pi box-border h-19 w-19 p-4 border-2 border-gray-900 rounded-2xl bg-black flex items-center justify-center social-button" style="animation-delay: 20.5s">
 					<i class="pi pi-tiktok text-5xl"></i>
 				</div>
 			</a>
 			<a href="https://github.com/TacoEnjoyer" class="cursor-pointer">
-				<div class="pi box-border h-19 w-19 p-4 border-2 border-violet-700 rounded-2xl bg-violet-900 flex items-center justify-center social-button" style="animation-delay: 16s">
+				<div class="pi box-border h-19 w-19 p-4 border-2 border-violet-700 rounded-2xl bg-violet-900 flex items-center justify-center social-button" style="animation-delay: 21s">
 					<i class="pi pi-github text-5xl"></i>
 				</div>
 			</a>
